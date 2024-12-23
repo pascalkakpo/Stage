@@ -67,11 +67,12 @@ button{
 }
 .container2{
     display: flex;
+    color: white;
     position: relative;
     justify-content: center;
     top: 100px;
     gap: 150px;
-    background-color: #6D6056;
+    background-image: url(../ressources/images/footer-bg.jpg);
 }
 .container2 p,h1{
     margin: 20px;
@@ -97,12 +98,6 @@ hr{
     border: 1px dashed;
     color: white;
 }
-/* .tab-link.active {
-    background-color: #fff;
-    font-weight: bold;
-    border-bottom: 2px solid #007bff;
-} */
-
 .footer{
     position: absolute;
     top: 360%;

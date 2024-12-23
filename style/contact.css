@@ -3,6 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family:pp ;
+    src: url(../fonts/Merienda/merienda-black.ttf);
+}
+@font-face {
+    font-family:pp1 ;
+    src: url(../fonts/Merienda/merienda-black.woff);
+}
 .header{
     display: flex;
     justify-content: space-between;
@@ -89,12 +97,13 @@ li,p{
     text-align: center;
 }
 .container2{
+    color: white;
     display: flex;
     position: relative;
     justify-content: center;
     top: 10px;
     gap: 150px;
-    background-color: #6D6056;
+    background-image: url(../ressources/images/footer-bg.jpg);
 }
 .container2 p,h1{
     margin: 20px;

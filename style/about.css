@@ -78,12 +78,13 @@ p{
     left: 5%;
 }
 .container2{
+    color: white;
     display: flex;
     position: relative;
     justify-content: center;
     top: 10px;
     gap: 150px;
-    background-color: #6D6056;
+    background-image: url(../ressources/images/footer-bg.jpg);
 }
 .container2 p,h1{
     margin: 20px;

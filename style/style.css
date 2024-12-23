@@ -3,6 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family:pp ;
+    src: url(../fonts/Merienda/merienda-black.ttf);
+}
+@font-face {
+    font-family:pp1 ;
+    src: url(../fonts/Athiti/athiti-medium.ttf)
+}
 .header{
     display: flex;
     justify-content: space-between;
@@ -14,6 +22,7 @@
     position: absolute;
     top: 10%;
     left: 13%;
+    font-family: pp;
 }
 .header .liens{
     display: flex;
@@ -36,26 +45,26 @@
 }
 .container{
     display: flex;
-    margin: 20px;
     justify-content: space-between;
+    width: 100%;
+
 }
 .container1{
     position: relative;
     display: flex;
     gap:10px;
+    width: 100%;
 }
 button{
     position: relative;
-    left: 35%;
-    top: 10px;
     width: 100px;
     height: 40px;
     cursor: pointer;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
     background-color: #6D6056;
     color: #EBE2DB;
+    border: none;
+    border-radius: 5px;
+    font-family: pp1;
 }
 p{
     text-align: center;
@@ -63,6 +72,7 @@ p{
 h2,h3{
     text-align: center;
     padding: 10px 4px;
+    font-family: pp;
 }
 
 .card1,.card2,.card3{
@@ -75,30 +85,37 @@ h2,h3{
 .img2{
     position: relative;
     display: flex;
-    top: -40px;
-    left: 20%;
     text-align: center;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .container2{
+    color: white;
     display: flex;
-    position: absolute;
+    position: relative;
     justify-content: center;
     top: 250%;
     gap: 150px;
     width: 100%;
-    background-color: #6D6056;
+    background-image: url(../ressources/images/footer-bg.jpg);
 }
 li{
     list-style: none;
+    font-family: pp1;
 }
 .container2 p,h1{
     margin: 20px;
 }
+p{
+    font-family: pp1;
+}
+h1{
+    font-family: pp;
+}
 .footer{
-    position: absolute;
+    position: relative;
     top: 280%;
 }
 hr{
@@ -125,18 +142,95 @@ i{
 #i{
     color: wheat;
     cursor: pointer;
-    margin: 30px;
     font-size: 2rem;
 }
 #i:hover{
     color: rgb(46, 25, 25);
 }
-@media (max-width:1350px) {
+@media (min-width:720px) and (max-width:1268px){
+    .container2{
+        width: 180%;
+    }
+    .footer{
+        width: 180%;
+        position: relative;
+    }
+    .header {
+        display: block;
+        position: relative;
+        text-align: center;
+    }
+    .header .liens{
+        width: 100%;   
+        gap: 40%; 
+        position: relative;
+        left: 2%;
+        margin-bottom: 10%;
+    }
+    .header .liens a{
+        position: relative;
+        background-color: #6D6056;
+        width: 100%;
+        color: white;
+    } 
+    .img2,.container{
+        width: 180%;
+    }
+    
+    .container1{
+        width: 170%;
+        justify-content: space-between;
+        position: relative;
+    }
+    
+}
+@media (max-width:712px) {
     .container1,.container{
         display: block;
         text-align: center;
+        width: 100%;
     }
     .card1,.card2,.card3{
         text-align: center;
+        width: 100%;
+        position: relative;
+    }
+    .container2{
+        display: block;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        position: relative;
+
+
+    }
+    .footer{
+        position: relative;
+        width: 100%;
+    }
+    .header {
+        display: block;
+        position: relative;
+        flex-direction: column;
+    }
+    .header .liens{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .header .liens a{
+        background-color: #6D6056;
+        width: 100%;
+        color: white;
+        text-align: center;
+    }
+    .img2{
+        width: 100%;
+        justify-content: center;
+        position: relative;
     }
 }
