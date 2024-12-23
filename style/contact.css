@@ -34,16 +34,22 @@
     background-color: #6D6056 ;
     color: #EBE2DB;
 }
-.formulaire{
+form{
     display: flex;
-    position: relative;
-    justify-content: center;
     align-items: center;
-    text-align: center;
+    justify-content: center;
     background-color: #EBE2DB;
     height: 60vh;
     width: 800px;
-    left: 300px;
+    gap: 20px;
+}
+.formulaire{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EBE2DB;
+    height: 60vh;
+    width: 800px;
     gap: 20px;
 }
 .input-box{

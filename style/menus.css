@@ -97,6 +97,12 @@ hr{
     border: 1px dashed;
     color: white;
 }
+/* .tab-link.active {
+    background-color: #fff;
+    font-weight: bold;
+    border-bottom: 2px solid #007bff;
+} */
+
 .footer{
     position: absolute;
     top: 360%;
